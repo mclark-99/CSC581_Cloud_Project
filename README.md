@@ -1,6 +1,7 @@
 # CSC581_Cloud_Project
 # KubePix
 **A Kubernetes-Based Image Sharing and Processing Pipeline**
+
 The application is designed as a multi-Pod Kubernetes application with separate components for the Web/API, image processing, and persistent storage. The image-processing stage uses a multi-container Pod consisting of an image processor and a logging sidecar.
 
 ## Project Architecture
