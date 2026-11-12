@@ -35,7 +35,7 @@ app.post("/images", upload.single("image"), async (req, res) => {
 
 try {
     const response = await fetch(
-        "http://nostalgic_margulis:3002/process",
+        process.env.IMAGE_PROCESSOR_URL || "http://localhost:3002/process",
         {
             method: "POST",
             headers: {
