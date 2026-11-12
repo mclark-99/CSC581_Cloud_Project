@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KubePix</title>
+</head>
+
+<body>
+    <main>
+        <h1>Welcome to <span class="highlight">KubePix!</span></h1>
+        <p>Your images, beautifully optimized.</p>
+        
+        <section class="upload-section">
+            <h2>Upload Your Image</h2>
+            <p>Select an image to get started.</p>
+
+            <input type="file" id="imageInput" accept="image/*">
+
+            <div id="previewContainer">
+                <img id="imagePreview" alt="Selected image preview">
+            </div>
+            
+            <button id="uploadButton" type="button" disabled>
+                Upload Image
+            </button>
+
+        </section>
+
+    </main>
+<script src="script.js"></script>
+</body>
+
+</html>
