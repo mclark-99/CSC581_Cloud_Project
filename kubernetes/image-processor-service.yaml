@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kubepix-image-processor
+spec:
+  type: ClusterIP
+  selector:
+    app: kubepix-image-processor
+  ports:
+    - protocol: TCP
+      port: 3002
+      targetPort: 3002

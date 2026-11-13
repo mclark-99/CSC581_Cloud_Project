@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubepix-web-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kubepix-web-api
+  template:
+    metadata:
+      labels:
+        app: kubepix-web-api
+    spec:
+      containers:
+        - name: web-api
+          image: kubepix-web-api:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 3000
+          env:
+            - name: IMAGE_PROCESSOR_URL
+              value: "http://kubepix-image-processor:3002/process"

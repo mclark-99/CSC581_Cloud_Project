@@ -29,7 +29,7 @@ uploadButton.addEventListener("click", async function() {
     formData.append("image", file);
 
     try{
-        const response = await fetch("http://localhost:3001/images", {
+        const response = await fetch("http://localhost:30080/images", {
             method: "POST",
             body: formData
         });
